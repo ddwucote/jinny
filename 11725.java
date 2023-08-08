@@ -28,11 +28,10 @@ public class Main {
         parents = new int[nodes+1];
 
         dfs(1);
-        // 루트인 1번 노드부터 시작한다.
+
 
         for (int i=2; i<parents.length; i++) {
             System.out.println(parents[i]);
-            // 2번 노드부터 부모를 구하면 된다.
         }
     }
 
@@ -43,8 +42,6 @@ public class Main {
             if (!visited[v]) {
                 dfs(v);
                 parents[v]=node;
-                //임의 노드 v를 만나기 위해서는 반드시 부모노드 node를 지난다.
-                // 따라서 부모 노드는 반복문 안에서 만나는 node
             }
         }
     }
