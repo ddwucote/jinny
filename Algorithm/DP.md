@@ -33,4 +33,4 @@ int fibo(int n)
     fiboData[i] = fiboData[i - 1] + fiboData[i - 2];
   return fiboData[n];
 }
-처음 값부터 계산해 최종 값까지 계산해 내는 것이 BOTTOM-UP 방식입니다.
+처음 값부터 계산해 최종 값까지 계산: BOTTOM-UP 
